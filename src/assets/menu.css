@@ -1,6 +1,6 @@
 :root {
     --header-height: 130px;
-    --menu-bg: #9ae9cf;
+    --menu-bg: transparent;
 }
 
 body {

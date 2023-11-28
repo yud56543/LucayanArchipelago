@@ -1,0 +1,123 @@
+/*Navigation*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0 100px;
+    padding: 0 100px;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+nav ul li{
+    margin: 0 5px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+nav ul li :last-child{
+    margin-left: 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav a:hover, nav a:focus {
+    color:rgb(94, 64, 154);
+}
+
+/*Homepage*/
+
+.Home main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.Home img {
+    max-width: 100% ;
+    margin: 0 auto;
+    display: block;
+}
+
+
+h1{
+    color: #000;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+h3{
+    color: #000;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+#Homepage{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    text-decoration: none;
+    font-size: 32px;
+    margin: 10px;
+}
+
+/* Home */
+
+.Tagline{
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+main{
+    margin-top: 200px;
+}
+
+/*Reservations link*/
+.reservations nav a:nth-child(1){
+    font-weight: bold;
+}
+/*Tours link*/
+.tours nav a:nth-child(2){
+    font-weight: bold;
+}
+/*Turks and Caico link*/
+.turksandcaico nav a:nth-child(3){
+    font-weight: bold;
+}
