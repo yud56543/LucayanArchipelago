@@ -1,55 +1,5 @@
 /*Navigation*/
 
-body{
-    margin: 0;
-    padding: 0;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-nav{
-    flex: 1;
-    text-align: center;
-}
-
-nav ul{
-    display: flex;
-    list-style-type: none;
-    margin: 0 100px;
-    padding: 0 100px;
-    text-align: center;
-    justify-content: space-between;
-
-}
-
-nav ul li{
-    margin: 0 5px;
-    margin-left: 10px;
-    margin-right: 0px;
-}
-
-nav ul li :last-child{
-    margin-left: 5px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
-    display: inline-block;
-    list-style-type: none;
-}
-
-nav a:hover, nav a:focus {
-    color:rgb(94, 64, 154);
-}
-
 /*Homepage*/
 
 .Home main{
@@ -92,6 +42,7 @@ h3{
     text-decoration: none;
     font-size: 32px;
     margin: 10px;
+    margin-left: 30px;
 }
 
 /* Home */
@@ -120,4 +71,15 @@ main{
 /*Turks and Caico link*/
 .turksandcaico nav a:nth-child(3){
     font-weight: bold;
+}
+
+@media(min-width: 640px){
+    nav a{
+        font-size: 18px;
+        
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
 }

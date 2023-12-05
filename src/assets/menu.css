@@ -1,9 +1,10 @@
 :root {
     --header-height: 130px;
-    --menu-bg: transparent;
+    --menu-bg: rgba(255, 255, 255);
 }
 
 body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
     margin: 0;
 }
@@ -25,6 +26,10 @@ header img {
     padding: 20px;
 }
 
+ul{
+    list-style: none;
+}
+
 nav {
     display: flex;
     flex-direction: column;
@@ -39,7 +44,6 @@ nav {
 nav a {
     text-decoration: none;
     padding: 10px;
-    text-align: center;
 }
 
 .btn-toggle-menu {
@@ -56,10 +60,12 @@ nav a {
 
 @media (min-width: 640px) {
     nav {
+        display: flex;
         flex-direction: row;
         height: var(--header-height);
         align-items: center;
         padding-right:20px;
+        justify-content: space-around;
     }
 
     nav a {
