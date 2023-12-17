@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include 'head', title:'Reservations | Lucayan Archipelago' %}
-<body class="reservations">
-    {% include 'header' %}
-    <main>
-        <h1>
-            Reservations
-        </h1>
-        <h2 class="Sitelinks">
-            <a href="https://www.priceline.com/?tab=flights">Priceline</a>
-        </h2>
-        <h2 class="Sitelinks">
-            <a href="https://www.kayak.com/flights/NYC-NAS/2023-12-14/2023-12-21/?sort=bestflight_a">Kayak</a>
-        </h2>
-        <h3>
-            The first step to a successful vacation is finding safe and reliable flights. Two such websites are Kayak and Priceline
-        </h3>
-        <h4>
-            Flights are labeled based on price. Typically its cheaper to make purchases a few weeks or months ahead of time so be sure to plan your trip around that. 
-        </h4>
-        <h2 class="Sitelinks">
-            <a href="https://www.expedia.com/Cruise-Search?destination=caribbean&max-length=300&min-length=1&semcid=US.MULTILOBO.GOOGLE.DT-c-EN.CRUISE&SEMDTL=a117756283563.b1139677724035.r1.g1aud-2067245471241:kwd-22310670.i1.d1617022496689.e1c.j19004859.k1.f1.n1.l1g.h1p.m1&gad=1&gclid=CjwKCAiA0syqBhBxEiwAeNx9N1pZxBfxpIeR2ymgPFhNKMKm4-PgzQVp2ok2MsBbnM40dryInlNQiRoCaxEQAvD_BwE">Expedia</a>
-        </h2>
-        <h3>
-            Cruises are often a great alternative for those who want more economic options or for those who potentially might be afraid of flying. Expedia often offers great rates
-        </h3>
-        <h4>
-            Do note that Carribean cruises are typically limited in their itinerary and port locations
-        </h4>
-        <h2 class="Sitelinks">
-            <a href="https://www.booking.com/index.en-gb.html?label=Pk0Ze6b5YCs6w5Tf0040OMw_kyDN58Es-jqLHQUFhT7tFOoYArFUOYA%3D%3D&sid=9446d79a7d0d2b9bf04f4017ec653d93&utm_source=kayak&utm_medium=SPPC&utm_term=Nassau&utm_content=inline&utm_campaign=us&aid=2210273">Bookings</a>
-        </h2>
-        </h2>
-        <h3>
-            Where you stay is just as important as where you go. Below is a list of a collection of some affordable and quality hotels that you may want to check out.
-        </h3>
-        <h4>
-            <ul>
+    {% include 'head', title:'Reservations | Lucayan Archipelago' %}
+    <body class="reservations">
+        {% include 'header' %}
+
+
+<main>
+    <h1>
+        Reservations
+    </h1>
+<body>
+<div class="container">
+    <div class="image-box">
+        <img src="/assets/image1.jpg" alt="Reservation Image">
+        <div class="overlay">
+            <a href="https://www.priceline.com/?tab=flights" class="priceline-box">Priceline</a>
+            <a href="https://www.kayak.com/" class="kayak-box">Kayak</a>
+        </div>
+    </div>
+    <div class="text-box">
+        <h2>Flights</h2>
+        <p>The first step to a successful vacation is finding safe and reliable flights. Two such websites are Kayak and Priceline.  Flights are labeled based on price. Typically its cheaper to make purchases a few weeks or months ahead of time so be sure to plan your trip accordingly</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="image-box">
+        <img src="/assets/image2.jpg" alt="Reservation Image 2">
+        <div class="overlay">
+            <a href="https://www.expedia.com/" class="expedia-box">Expedia</a>
+        </div>
+    </div>
+    <div class="text-box">
+        <h2>Cruises</h2>
+        <p>Cruises are often a great alternative for those who want more economic options or for those who potentially might be afraid of flying. Expedia often offers great rates. Do note that Carribean cruises are typically limited in their itinerary and port location</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="image-box">
+        <img src="/assets/image3.jpg" alt="Reservation Image 3">
+        <div class="overlay">
+            <a href="https://www.booking.com/" class="booking-box">Booking</a>
+        </div>
+    </div>
+    <div class="text-box">
+        <h2>Hotels</h2>
+        <p>Where you stay is just as important as where you go. Below is a list of a collection of some affordable and quality hotels that you may want to check out.
+        <p>
+          <ul>
                 <li>Sandals Royal Bahamian</li>
                 <li>The Ocean Club</li>
                 <li>Grand Hyatt</li>
@@ -44,9 +56,11 @@
                 <li>Viva Fortuna Beach</li>
                 <li>Courtyard</li>
                 <li>Sandyport</li>
-            </ul>
-        </h4>
-    </main>
-    {% include 'footer' %}
+          </ul>
+        </p>
+</div>
+
 </body>
+{% include 'footer' %}
+</main>
 </html>

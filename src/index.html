@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include 'head', title:'My Homepage' %}
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+    </style>
+
     <body class="homepage">
         {% include 'header' %}
         <main>
-            <h1>The Lucayan Archipelago</h1>
+            <div class="text-overlay">
+                <h1>The Lucayan Archipelago</h1>
+            </div>
             <img alt="Tropical Island" src="/assets/Homepageimage.jpg" />
             <h3 class="Tagline">Everything you need to plan your next vacation</h2>
         </main>

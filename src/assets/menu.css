@@ -54,15 +54,6 @@ nav a {
     align-items: center;
 }
 
-nav a.sitelinks{
-    font-weight: normal;
-}   
-
-nav a.sitelinks:active,
-nav a.sitelinks:target {
-font-weight: bold;
-}
-
 .page {
     display: none;
 }
@@ -124,5 +115,10 @@ font-weight: bold;
     nav a{
         font-size: 32px;
         margin-bottom: 150px;
+        transition: color 0.5s;;
+    }
+
+    nav a:hover, nav a:focus{
+        color: #a1a1a1;
     }
 }
