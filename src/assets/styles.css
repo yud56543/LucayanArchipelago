@@ -122,7 +122,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.5);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
@@ -151,5 +151,5 @@ body {
 .image-box:hover .kayak-box,
 .image-box:hover .expedia-box,
 .image-box:hover .booking-box{ 
-    background-color: #2ecc71;
+    background-color: #926e96;
 }
