@@ -3,29 +3,39 @@
 {% include 'head', title:'Tours | Lucayan Archipelago' %}
 <body class="tours">
     {% include 'header' %}
-    <main>
-        <h1>
-            Tours
-        </h1>
-        <h2 class="Sitelinks">
-            <a href="https://www.getyourguide.com/bahamas-l169063/">Get Your Guide</a>
-        </h2>
-        <h3>
-            Get Your Guide hosts everything you need to plan your stay.
-        </h3>
-        <h4>
-            It contains collections of events ranging from individual activities such as reef snorkeling with pigs to full guided tours. 
-        </h4>
-        <h2 class="Sitelinks">
-            <a href="https://bs.usembassy.gov/">US Embassy</a>
-        </h2>
-        <h3>
-            Safety is always the number one priority
-        </h3>
-        <h4>
-            Especially so when you're in a foreign country. Always stay up to date on current events and keep your travel documents prepared.
-        </h4>
-    </main>
-    {% include 'footer' %}
+
+<main>
+    <h1>
+        Tours
+    </h1>
+<body>
+<div class="container">
+    <div class="image-box">
+        <img src="/assets/image2-1.jpg" alt="Tour Image">
+        <div class="overlay">
+            <a href="https://www.getyourguide.com/bahamas-l169063/" class="get-box">Get Your Guide</a>
+        </div>
+    </div>
+    <div class="text-box">
+        <h2 class="page2text">Activities</h2>
+        <p class="page2mini">This website hosts everything you need to plan your stay. Containing collections of events ranging from individual activities such as reef snorkeling with pigs to full guided tours.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="image-box">
+        <img src="/assets/image2-2.jpg" alt="Tour Image 2">
+        <div class="overlay">
+            <a href="https://bs.usembassy.gov/" class="embassy-box">Embassy</a>
+        </div>
+    </div>
+    <div class="text-box">
+        <h2 class="page2text">Travel Advisory</h2>
+        <p class="page2mini">Safety is always the number one priority. Especially so when you're in a foreign country. Always stay up to date on current events and keep your travel documents prepared.</p>
+    </div>
+</div>
+
 </body>
+{% include 'footer' %}
+</main>
 </html>

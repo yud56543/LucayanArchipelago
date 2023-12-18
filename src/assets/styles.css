@@ -91,26 +91,51 @@ main{
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
+    margin-left: 10px;
     padding: 0;
 }
 
+
 .container {
     display: flex;
-    max-width: 50%;
+    max-width: 75%;
     margin: 50px auto;
+    flex-wrap: wrap;
 }
 
 .text-box,
 .image-box {
     flex: 1;
     position: relative; 
+    margin-left: 10px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    max-height: 425px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.page2text {
+    margin-top: 0;
+}
+
+.page2mini {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.text-box {
+    margin-left: 10px;
 }
 
 .image-box img {
     max-width: 100%;
-    height: auto;
+    width: 800px;
+    height: 425px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .overlay {
@@ -119,7 +144,12 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 425px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: rgba(255, 255, 255, 0.5);
@@ -137,7 +167,7 @@ body {
 .expedia-box,
 .booking-box{
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #3498db;
     color: #fff;
     text-decoration: none;
@@ -151,5 +181,54 @@ body {
 .image-box:hover .kayak-box,
 .image-box:hover .expedia-box,
 .image-box:hover .booking-box{ 
+    background-color: #926e96;
+}
+
+@media(max-width: 650px) {
+    .page2mini {
+        font-size: 0.6em;
+    }
+}
+
+
+/*Tours*/
+
+.get-box,
+.embassy-box{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px; 
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.image-box:hover .get-box,
+.image-box:hover .embassy-box{ 
+    background-color: #926e96;
+}
+
+/*Turks and Caico*/
+
+.travel-box,
+.island-box,
+.embassy2-box{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px; 
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.image-box:hover .travel-box,
+.image-box:hover .island-box,
+.image-box:hover .embassy2-box{ 
     background-color: #926e96;
 }
