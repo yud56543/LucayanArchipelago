@@ -70,7 +70,7 @@ main{
     margin-top: 200px;
 }
 
-@media(min-width: 640px){
+@media(min-width: 675px){
     nav a{
         font-size: 20px;
         transition: color 0.5s;
@@ -131,9 +131,8 @@ body {
 
 .text-box ul{
     display: block;
-    margin: auto;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
@@ -198,13 +197,13 @@ body {
     background-color: #926e96;
 }
 
-@media(max-width: 650px) {
+@media(max-width: 575px) {
     .page2mini {
         font-size: 0.6em;
     }
 }
 
-@media(max-width: 650px) {
+@media(max-width: 575px) {
     .text-box li {
         font-size: 0.5em;
     }
